@@ -6,9 +6,9 @@ if [[ $EUID -ne 0 ]]; then
   exit 1
 fi
 echo "===================================="
-echo "  VPS 一键修改主机名"
+echo "      Oakley 一键修改主机名"
 echo "===================================="
-read -rp "请输入新的主机名（回车取消）: " NEW_HOSTNAME
+read -rp "请输入新的主机名（直接回车可取消）: " NEW_HOSTNAME
 if [[ -z "$NEW_HOSTNAME" ]]; then
   echo "已取消：未输入主机名。"
   exit 0
