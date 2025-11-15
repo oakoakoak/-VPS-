@@ -6,7 +6,7 @@ if [[ $EUID -ne 0 ]]; then
   exit 1
 fi
 echo "===================================="
-echo "  VPS 一键修改主机名（支持中文）"
+echo "  VPS 一键修改主机名"
 echo "===================================="
 read -rp "请输入新的主机名（回车取消）: " NEW_HOSTNAME
 if [[ -z "$NEW_HOSTNAME" ]]; then
